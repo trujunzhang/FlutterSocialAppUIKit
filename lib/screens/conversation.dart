@@ -114,7 +114,8 @@ class _ConversationState extends State<Conversation> {
                   color: Theme.of(context).primaryColor,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey[500],
+                      // color: Colors.grey[500],
+                      color: Colors.grey.shade500,
                       offset: Offset(0.0, 1.5),
                       blurRadius: 4.0,
                     ),
@@ -140,7 +141,7 @@ class _ConversationState extends State<Conversation> {
                         title: TextField(
                           style: TextStyle(
                             fontSize: 15.0,
-                            color: Theme.of(context).textTheme.title.color,
+                            color: Theme.of(context).textTheme.headline6!.color,
                           ),
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(10.0),
@@ -155,7 +156,7 @@ class _ConversationState extends State<Conversation> {
                             hintText: "Write your message...",
                             hintStyle: TextStyle(
                               fontSize: 15.0,
-                              color: Theme.of(context).textTheme.title.color,
+                              color: Theme.of(context).textTheme.headline6!.color,
                             ),
                           ),
                           maxLines: null,

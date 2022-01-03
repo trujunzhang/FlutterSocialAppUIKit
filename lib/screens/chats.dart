@@ -10,7 +10,7 @@ class Chats extends StatefulWidget {
 
 class _ChatsState extends State<Chats> with SingleTickerProviderStateMixin,
     AutomaticKeepAliveClientMixin{
-  TabController _tabController;
+  late TabController _tabController;
 
   @override
   void initState() {
@@ -48,7 +48,7 @@ class _ChatsState extends State<Chats> with SingleTickerProviderStateMixin,
           controller: _tabController,
           indicatorColor: Theme.of(context).accentColor,
           labelColor: Theme.of(context).accentColor,
-          unselectedLabelColor: Theme.of(context).textTheme.caption.color,
+          unselectedLabelColor: Theme.of(context).textTheme.caption!.color,
           isScrollable: false,
           tabs: <Widget>[
             Tab(

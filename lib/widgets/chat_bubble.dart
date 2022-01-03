@@ -9,15 +9,15 @@ class ChatBubble extends StatefulWidget {
   final bool isMe, isGroup, isReply;
 
   ChatBubble({
-    @required this.message,
-    @required this.time,
-    @required this.isMe,
-    @required this.isGroup,
-    @required this.username,
-    @required this.type,
-    @required this.replyText,
-    @required this.isReply,
-    @required this.replyName});
+    required this.message,
+    required this.time,
+    required this.isMe,
+    required this.isGroup,
+    required this.username,
+    required this.type,
+    required this.replyText,
+    required this.isReply,
+    required this.replyName});
 
 
   @override
